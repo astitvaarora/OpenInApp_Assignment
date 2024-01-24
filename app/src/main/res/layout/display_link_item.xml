@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="12dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/linkphotoIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/link_photo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="12dp"
+                />
+            <TextView
+                android:id="@+id/linknameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="link name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/figtree_font"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@id/linkphotoIV"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="12dp"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/linknameTV"
+                app:layout_constraintStart_toEndOf="@id/linkphotoIV"
+                android:text="22 Aug 2022"
+                android:textSize="12sp"
+                android:fontFamily="@font/figtree_font"
+                android:textColor="#999CA0"
+                android:layout_marginStart="12dp"
+                />
+
+            <TextView
+                android:id="@+id/no_of_click_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="2233"
+                android:fontFamily="@font/figtree_font"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                />
+            <TextView
+                android:id="@+id/click_title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clicks"
+                app:layout_constraintTop_toBottomOf="@id/no_of_click_TV"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#999CA0"
+                android:textSize="12sp"
+                android:fontFamily="@font/figtree_font"
+                android:layout_marginEnd="12dp"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/link_card_design"
+        android:backgroundTint="#e8f1ff"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/linkTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3184ff"
+                android:fontFamily="@font/figtree_font"
+                android:text="https://samplelink.oia.bio/ashd..."
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14.5dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/copyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/copy_link_icon"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:width="12dp"
+        android:color="#0E6FFF"
+        android:dashWidth="8dp"
+        android:dashGap="6dp" />
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+
+        />
+</shape>

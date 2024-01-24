@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dashboard">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BottomNavigationView.Custom" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">#999CA0</item>
+    </style>
+
+
+</resources>
